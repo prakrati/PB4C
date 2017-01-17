@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"    android:layout_width="fill_parent" android:background="@drawable/background"
+android:orientation="vertical"
+    android:layout_height="fill_parent"
+
+    tools:context="mobile.trs.pb4c.LoginActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/appicon"
+        android:id="@+id/imageView" android:layout_marginTop="10dip"
+        android:layout_weight="0.34" />
+
+    <LinearLayout
+        android:id="@+id/activity_main2" android:layout_marginTop="20dip" android:layout_marginBottom="20dip"
+        android:orientation="vertical"  android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:gravity="center"
+
+        android:layout_weight="0.32">
+
+
+    <TextView
+        android:text="User Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:id="@+id/username_title"
+        android:textColor="@android:color/black"
+
+        tools:textStyle="bold" />
+        <LinearLayout
+            android:layout_marginTop="20dip" android:layout_marginBottom="20dip"
+            android:orientation="horizontal"  android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:gravity="center"
+       android:weightSum="2">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_marginRight="5dip"
+         android:layout_weight="1.75" android:background="@drawable/user"
+                />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/darker_gray"
+        android:inputType="textEmailAddress"
+        android:ems="10"  android:layout_weight="0.25"
+
+
+        android:id="@+id/editText5"
+        tools:background="@android:color/darker_gray"
+         />
+            </LinearLayout>
+
+        <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText5"
+        android:layout_alignEnd="@+id/username_title"
+       android:textColor="@android:color/black"
+
+        tools:textStyle="bold"
+        android:id="@+id/textView3" />
+        <LinearLayout
+            android:layout_marginTop="20dip" android:layout_marginBottom="20dip"
+            android:orientation="horizontal"  android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:gravity="center"
+            android:weightSum="2">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_marginRight="5dip"
+                android:layout_weight="1.75" android:background="@drawable/password"
+                />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:background="@android:color/darker_gray"
+        android:inputType="textPassword"
+        android:ems="10" android:layout_weight="0.25"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText5"
+        android:id="@+id/editText6"
+        tools:background="@android:color/darker_gray" />
+            </LinearLayout>
+        <TextView
+            android:text="Forgot Password"
+            android:layout_width="fill_parent" android:gravity="right"
+            android:layout_height="wrap_content"
+ android:layout_marginRight="20dip"
+            android:id="@+id/forgotpassword" android:clickable="true" android:onClick="callForgotPwd"
+            android:textColor="@android:color/black"
+
+           android:layout_marginTop="10dip" />
+        <TextView
+            android:text="Register" android:clickable="true" android:onClick="callRegistration"
+            android:layout_width="fill_parent" android:gravity="left"
+            android:layout_height="wrap_content"
+
+android:layout_marginLeft="20dip"
+            android:id="@+id/register"
+            android:textColor="@android:color/black"
+
+            android:layout_marginTop="10dip" />
+        <Button
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:background="@drawable/buttonwhite" />
+</LinearLayout>
+
+
+</LinearLayout>
